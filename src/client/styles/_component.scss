@@ -1,0 +1,87 @@
+//BUTTON STYLES
+
+.btn-add-trip {
+  @include btn-circle(35px)
+}
+
+.btn-sm {
+  @include btn-circle(30px);
+
+}
+.btn-very-sm{
+  @include btn-circle(25px);
+  font-size: 0.7rem;
+}
+.btn-save {
+  @include btn-save-remove(1rem, $primary-dark);
+}
+
+.btn-remove {
+  @include btn-save-remove(1rem, red)
+}
+
+.form-add-trip {
+  @include bg-font-size(20px);
+  background: $primary-very-light;
+
+  input {
+    outline: none;
+    border: none;
+    padding: 7px 14px;
+
+  }
+
+}
+
+.border-bottom {
+  border-bottom: 1px solid $primary-light !important;
+}
+
+.border-right {
+  border-right: 1px solid $primary-light !important;
+}
+.border-bottom-bg {
+  border-bottom: 2px solid $primary-light !important;
+}
+
+
+@media (max-width: 700px) {
+
+  .btn-add-trip {
+    @include btn-circle(30px);
+  }
+
+  .btn-sm {
+    @include btn-circle(30px);
+
+  }
+
+  .btn-save {
+    @include btn-save-remove(1rem, $primary-dark);
+  }
+
+  .btn-remove {
+    @include btn-save-remove(1rem, red)
+  }
+
+  .form-add-trip {
+    @include bg-font-size(1rem);
+
+
+    input {
+
+      padding: 5px 10px;
+
+    }
+
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid $primary-light !important;
+  }
+
+  .border-right {
+    border-right: 1px solid $primary-light !important;
+  }
+
+}

@@ -1,0 +1,80 @@
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url(/src/client/media/fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url(/src/client/media/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(/src/client/media/fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url(/src/client/media/fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(/src/client/media/fonts/Roboto-Regular.ttf);
+}
+%roboto-medium{
+  font-family: "Roboto-Medium",sans-serif;
+}
+%roboto-light{
+  font-family: "Roboto-Light" , sans-serif;
+}
+%roboto-bold{
+  font-family: "Roboto-Bold", sans-serif;
+}
+%roboto-italic{
+  font-family: "Roboto-Italic", sans-serif;
+}
+%roboto-regular{
+  font-family: "Roboto-Regular", sans-serif;
+}
+body{
+  color: black;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %roboto-medium
+}
+
+.header-text{
+  @include bg-font-size(50px);
+  @extend %roboto-light;
+}
+.form-add-trip{
+  @extend %roboto-regular;
+}
+
+.bg-size{
+  @include bg-font-size(20px);
+}
+button{
+  @extend %roboto-medium
+}
+.location{
+  @extend %roboto-regular
+}
+.weather-description{
+  @extend %roboto-light
+}
+@media (max-width: 700px) {
+  .location__add-packing-list{
+    display: none;
+  }
+  .header-text{
+    @include bg-font-size(35px);
+  }
+  .bg-size{
+    @include bg-font-size(1rem);
+  }
+
+}

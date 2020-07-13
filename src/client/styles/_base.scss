@@ -1,0 +1,41 @@
+$primary-very-light: #bfcdf5;
+$primary-light:#4169E1;
+$pirmary-medium: #34558b;
+$primary-dark:#00008B;
+
+
+//MIXIN STYLES
+
+@mixin btn-save-remove($size, $color){
+  font-size: $size;
+  border-radius: 0 !important;
+  outline: none !important;
+  width: 120px !important;
+  box-shadow: none !important;
+  border: 1px solid $color !important;
+  color: black !important;
+  &:hover,
+  &:active,
+  &:focus{
+    background: $color ;
+    outline: none !important;
+  }
+}
+@mixin btn-circle($height){
+  border: 2px solid $primary-light !important;
+  border-radius: 20px !important;
+  padding: 0 !important;
+  height: $height !important;
+  background: white ;
+}
+@mixin bg-font-size($size){
+  font-size: $size !important;
+
+}
+.background {
+  position:absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

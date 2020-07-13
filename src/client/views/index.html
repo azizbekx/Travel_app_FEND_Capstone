@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel_App_Capstone_Project</title>
+<!--    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">-->
+    <!-- <link rel="stylesheet" href="../media/fontawesome-free-5.13.1-web/css/all.css"> -->
+<!--    <link rel="stylesheet" href="../styles/main.scss">-->
+    <!-- <link rel="stylesheet" href="../styles/sass/main.scss"> -->
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar" class="py-2 container-fluid">
+            <div class="row d-flex  align-items-center">
+<!--                <div class="col-4 col-md-4 d-flex justify-content-center" id="logo">-->
+<!--                    <img src="../media/images/Logo_sm.png" alt="logo" />-->
+<!--                </div>-->
+                <div class="col-8 col-md-5  ">
+                    <form action="#">
+                        <input type="text" placeholder="Search" class="form__search">
+                    </form>
+                </div>
+<!--                <div class="col-12 col-md-3 d-flex mt-2 mt-md-0  align-items-center justify-content-center " id="user">-->
+<!--                    <i class="fa fa-bell p-2"></i>-->
+<!--                    <i class="fa fa-envelope mx-2 mx-md-3 p-2"></i>-->
+<!--                    <img class="user__img rounded-circle  ml-4" src="../media/images/person_3.jpg" alt="user" />-->
+
+
+<!--                </div>-->
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+        <div class="container">
+            <p class="header-text mt-3">Travel Planner</p>
+            <div class="row my-md-3 mb-3">
+
+                <div class="col-6">
+                    <h4>My trips:</h4>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <button id="addTrip" class="btn btn-light btn-outline-primary btn-add-trip px-2 px-md-3 "><i
+                            class="fa fa-plus mr-md-1" ></i>Add
+                        Trip
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <main id="main__display">
+
+    </main>
+
+
+    <canvas class="background"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script>
+
+        window.onload = function() {
+            Particles.init({
+                selector: '.background',
+                color: '#75A5B7',
+                maxParticles: 130,
+                connectParticles: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        options: {
+                            maxParticles: 80,
+                            connectParticles: true,
+                        }
+                    }, {
+                        breakpoint: 375,
+                        options: {
+                            connectParticles: true,
+                            maxParticles: 50
+                        }
+                    }
+                ]
+            });
+        };
+
+    </script>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+
+
+
+</body>
+
+</html>

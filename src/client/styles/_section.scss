@@ -1,0 +1,57 @@
+.location {
+  background: linear-gradient(120deg, #eef3fd 60%, #d9e2f5 80%, #cedcf1 100%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s linear;
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  }
+
+  &__image img {
+    width: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  input,
+  textarea {
+    outline: none;
+    border: none;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $pirmary-medium;
+    }
+  }
+
+
+}
+
+.location__left,
+.location__right {
+  width: 50%;
+}
+.weather-icon {
+    img{
+      width: 70px;
+      height: 70px;
+    }
+
+}
+
+@media (max-width: 700px) {
+  .location {
+    h3{
+      font-size: 25px;
+    }
+    h4{
+      font-size: 20px;
+    }
+  }
+  .location__left,
+  .location__right {
+    width: 100%;
+  }
+
+}

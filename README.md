@@ -20,12 +20,12 @@ enter link `localhost:4000`
 
 # Home Page
 
-![](Images__Readme/1.PNG)
+![](Image__Readme/1.PNG)
 
 ## If you don't enter in input, alert massage
 
-![](Images__Readme/2.PNG)
+![](Image__Readme/2.PNG)
 
 ## Result 
 
-![](Images__Readme/3.jpg)
+![](Image__Readme/3.jpg)

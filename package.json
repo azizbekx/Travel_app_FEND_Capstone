@@ -1,5 +1,5 @@
 {
-    "name": "Travel_App_Webpack",
+    "name": "Travel_app_FEND_Capstone",
     "version": "1.0.0",
     "scripts": {
         "test": "jest --watchAll",
